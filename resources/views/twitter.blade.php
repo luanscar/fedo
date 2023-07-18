@@ -41,7 +41,7 @@
         {{-- CENTER --}}
         <div class="relative col-span-2 mx-4 h-full">
             <div class="sticky top-0 w-full bg-black-100 pb-4">
-                <div class="flex items-center justify-center gap-12 pt-8">
+                <div class="flex items-center justify-center gap-12 pt-4">
                     <x-menu.item icon="home" :active="true" />
                     <x-menu.item icon="comment" :active="false" />
                     <x-menu.item icon="bell" :active="false" />
