@@ -12,9 +12,9 @@
             <span class="text-white/50">Followers</span>
         </div>
 
-        <x-avatar :classes="'object-cover object-center h-32 w-32'"
-            class="-mt-[50px] overflow-hidden rounded-[39px] border-8 border-black-100/20 bg-black-200"
-            :url="'https://i.imgur.com/A7LDS5a.png'" />
+        <div class="-mt-[50px] h-32 w-32 overflow-hidden rounded-[39px] border-8 border-black-100/20 bg-black-200">
+            <img class="object-scale-down object-center" src="https://i.imgur.com/A7LDS5a.png" alt="">
+        </div>
 
 
         <div class="flex flex-col items-center justify-center pl-3">
