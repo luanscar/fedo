@@ -1,8 +1,24 @@
 <x-tweet.container >
     <x-tweet.retweeted>
-        <x-tweet.retweetedIcon />
+        <x-tweet.retweeted-icon />
+        Voce Retweetou
     </x-tweet.retweeted>
-    <x-tweet.avatar />
+
+    <x-tweet.body>
+        <x-tweet.avatar />
+        <x-tweet.content>
+            <x-tweet.header name="Rocketseat" user="@rocketseat" time="27 de jun" />
+            <x-tweet.description> Foguete não da ré </x-tweet.description>
+            <x-tweet.image-content />
+
+            <x-tweet.icons>
+                <x-icons.comment class="h-6"/>
+                <x-icons.favorite class="h-6"/>
+                <x-icons.retweeted class="h-6" />
+            </x-tweet.icons>
+        </x-tweet.content>
+    </x-tweet.body>
+
     <x-tweet.text />
     <x-tweet.actions />
 </x-tweet.container>

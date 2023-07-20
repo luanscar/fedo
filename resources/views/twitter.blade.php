@@ -21,25 +21,28 @@
 
 <body class="h-full font-sans antialiased dark:bg-black-100">
 
-    <main class="container mx-auto grid h-full grid-cols-4">
 
-        <aside class="relative">
+
+
+<x-tweet.index />
+
+    {{--<main class="container mx-auto grid h-full grid-cols-4">--}}
+
+      {{--  <aside class="relative">
             <div class="sticky top-4 mx-4">
-                {{-- SEARCH --}}
+                 SEARCH
                 <x-side.search />
-                {{-- END SEARCH --}}
+                 END SEARCH
                 <x-side.profile-info />
 
                 <x-side.skills />
-
-
             </div>
-        </aside>
+        </aside>--}}
         {{-- END MENU --}}
 
 
         {{-- CENTER --}}
-        <div class="relative col-span-2 mx-4 h-full">
+        {{--<div class="relative col-span-2 mx-4 h-full">
             <div class="sticky top-0 w-full bg-black-100 pb-4">
                 <div class="flex items-center justify-center gap-12 pt-4">
                     <x-menu.item icon="home" :active="true" />
@@ -49,9 +52,9 @@
                 </div>
             </div>
 
-            <x-compose.post />
 
-            <div class="w-full border-b-[0.625px]">
+
+            --}}{{--<div class="w-full border-b-[0.625px]">
                 <div class="bg-slate-500">
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam dolor arcu,
                         finibus
@@ -399,12 +402,12 @@
                         Donec sed nisi fringilla, posuere metus at, semper dolor. Nam ac enim libero. Phasellus sed
                         ullamcorper ipsum.</span>
                 </div>
-            </div>
-        </div>
+            </div>--}}{{--
+        </div>--}}
         {{-- END CENTER --}}
 
         {{-- RIGHT SIDE --}}
-        <div class="relative h-full">
+        {{--<div class="relative h-full">
             <div class="sticky top-4 h-auto">
                 <label class="relative inline-flex cursor-pointer items-center">
                     <input type="checkbox" :value="darkMode" class="peer sr-only" @change="darkMode = !darkMode">
@@ -416,10 +419,10 @@
             </div>
         </div>
 
-        </div>
+        </div>--}}
         {{-- END RIGHT SIDE --}}
 
-    </main>
+ {{--   </main>--}}
 
     @livewireScripts
 </body>

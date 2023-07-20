@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('twitter');
+    return view('index');
 });
 
 Route::get('/dashboard', function () {

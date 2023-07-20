@@ -6,7 +6,7 @@
     $dot = $active ?? false ? 'absolute bottom-1 block bg-yell rounded-full w-2 h-2' : '';
 @endphp
 
-<div class="flex flex-col items-center">
-    <x-dynamic-component :component="'icons.' . $icon" {{ $attributes->merge(['class' => $classes]) }} />
-    <div {{ $attributes->merge(['class' => $dot]) }}></div>
+<div {{$attributes->merge(['class' => $classes])}}>
+    <x-dynamic-component :component="'icons.' . $icon" {{ $attributes->merge(['class' => $classes , 'class' => '']) }} />
+    <div {{ $attributes->merge(['class' => $dot]) }}>{{$title}}</div>
 </div>

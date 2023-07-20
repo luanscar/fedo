@@ -10,6 +10,9 @@ export default {
     ],
     darkMode: 'class',
     theme: {
+        container: {
+            center: true,
+        },
         extend: {
             colors: {
                 'black-100': '#1a1a1a',
@@ -17,6 +20,15 @@ export default {
                 'black-300': '#282828',
                 'black-400': '#2f2e2e',
                 'yell': '#fffd00',
+            },
+            minHeight: {
+                '285': '285px',
+            },
+            maxHeight: {
+                '41': '41vw'
+            },
+            width: {
+                '63': '63%'
             },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
